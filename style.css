@@ -1,0 +1,32 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0;
+  padding: 10px;
+}
+#layout {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#layout ol {
+  border-right: 1px solid gray;
+  width: 100px;
+}
+#article {
+  padding: 20px;
+}
+@media(max-width: 800px) {
+  #layout {
+    display: block;
+  }
+  #layout ol {
+    border-right: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
